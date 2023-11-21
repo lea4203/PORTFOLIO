@@ -84,6 +84,10 @@ body {
 .progress-bar-react { background-color: #34495e; }
 
 
+.progress-bar {
+  transition: width 1s ease; /* Ajoute une transition de 1 seconde avec une accélération */
+}
+
 .card-img-top {
   height: 200px; /* Ajustez la hauteur selon vos préférences */
   object-fit: cover;
