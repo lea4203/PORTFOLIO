@@ -1,0 +1,96 @@
+body {
+  background-color: #4a4747; /* Couleur de fond */
+}
+
+.navbar {
+  background-color: #333; /* Couleur de la barre de navigation */
+}
+
+.navbar a {
+  color: #fff; /* Couleur du texte de la barre de navigation */
+}
+
+.profile {
+  text-align: center;
+  padding: 20px;
+  background-color: #4a4747;; /* Couleur de fond du profil */
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  image-rendering: pixelated;
+}
+
+.profile h1,
+.profile h3 {
+  color: #fff; /* Couleur du texte dans le profil */
+}
+
+.section {
+  text-align: center;
+  margin: 20px;
+  background-color: #4a4747;; /* Couleur de fond des sections */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Ombre */
+}
+
+.section h2 {
+  color: #333; /* Couleur du titre des sections */
+}
+
+.section p {
+  color: #555; /* Couleur du texte des sections */
+}
+
+.custom-card {
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: scale(1.05); /* Zoom de 105% lors du survol des cartes */
+}
+
+.card-title a {
+  color: #333; /* Couleur des liens des projets */
+}
+
+.card-title a:hover {
+  color: #ff9900; /* Couleur de survol des liens des projets */
+}
+/* Styles pour les titres h5 des projets */
+.card.custom-card h5 a {
+  color: gray;
+}
+#skills {
+  background-color: #4a4747; /* Change the background color as needed */
+  padding: 80px 0;
+}
+
+#skills h2 {
+  color: #ffffff; /* Blue color for the heading text */
+}
+
+.progress-bar-htmlcss { background-color: #3498db; }
+.progress-bar-javascript { background-color: #e74c3c; }
+.progress-bar-php { background-color: #2ecc71; }
+.progress-bar-mysql { background-color: #f39c12; }
+.progress-bar-symfony { background-color: #9b59b6; }
+.progress-bar-wordpress { background-color: #27ae60; }
+.progress-bar-prestashop { background-color: #e67e22; }
+.progress-bar-react { background-color: #34495e; }
+
+
+.card-img-top {
+  height: 200px; /* Ajustez la hauteur selon vos préférences */
+  object-fit: cover;
+}
+
+.card-title a {
+  color: white; /* Couleur du texte */
+  font-size: 18px; /* Taille de la police */
+  text-decoration: none; /* Supprime le soulignement du lien */
+}
