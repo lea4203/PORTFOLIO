@@ -84,8 +84,17 @@ body {
 .progress-bar-react { background-color: #34495e; }
 
 
-.progress-bar {
-  transition: width 1s ease; /* Ajoute une transition de 1 seconde avec une accélération */
+@keyframes progressBarAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.progress-bar-animated {
+  animation: progressBarAnimation 2s ease-in-out;
 }
 
 .card-img-top {
