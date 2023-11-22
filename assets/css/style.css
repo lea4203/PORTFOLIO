@@ -14,7 +14,7 @@ body {
 .profile {
   text-align: center;
   padding: 20px;
-  background-color: #4a4747;; /* Couleur de fond du profil */
+  background-color: #666;; /* Couleur de fond du profil */
 }
 
 .profile img {
