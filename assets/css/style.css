@@ -46,26 +46,7 @@ body {
   color: #555; /* Couleur du texte des sections */
 }
 
-.custom-card {
-  border: none;
-  transition: transform 0.3s ease;
-}
 
-.custom-card:hover {
-  transform: scale(1.05); /* Zoom de 105% lors du survol des cartes */
-}
-
-.card-title a {
-  color: #333; /* Couleur des liens des projets */
-}
-
-.card-title a:hover {
-  color: #ff9900; /* Couleur de survol des liens des projets */
-}
-/* Styles pour les titres h5 des projets */
-.card.custom-card h5 a {
-  color: gray;
-}
 #skills {
   background-color: #4a4747; /* Change the background color as needed */
   padding: 80px 0;
@@ -97,14 +78,64 @@ body {
 .progress-bar-animated {
   animation: progressBarAnimation 2s ease-in-out;
 }
+/* Your existing CSS */
+
+/* Adjust the card styles for a more rectangular shape */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 10px; /* Add border-radius for rounded corners */
+}
 
 .card-img-top {
-  height: 200px; /* Ajustez la hauteur selon vos préférences */
+  flex: 2; /* Adjust the flex ratio for the image */
   object-fit: cover;
+  border-top-left-radius: 10px; /* Add border-radius to top-left corner */
+  border-top-right-radius: 10px; /* Add border-radius to top-right corner */
 }
 
-.card-title a {
-  color: white; /* Couleur du texte */
-  font-size: 18px; /* Taille de la police */
-  text-decoration: none; /* Supprime le soulignement du lien */
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* Add padding for better spacing */
 }
+
+.card-title {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Center Pagination Styles */
+#projets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #ddd;
+}
+
